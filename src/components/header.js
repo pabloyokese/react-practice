@@ -1,5 +1,5 @@
 import React from 'react';
-import '../css/styles.css'
+import classes from '../css/styles.css'
 
 class Header extends React.Component {
 
@@ -15,7 +15,7 @@ class Header extends React.Component {
     render(){       
         return (
         <header >
-            <div className="logo">Logo</div>
+            <div className={classes.logo}>Logo</div>
             <input type="text" onChange={ this.inputChangeHandler} />            
         </header>
         )
